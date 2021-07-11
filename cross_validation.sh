@@ -27,7 +27,7 @@ for ((idx=1; idx<=$k_fold; idx++)); do
      -dev ${dev_path} \
      -res ${result_path} \
      -max_sequence_len 64\
-     -epoch 1 \
+     -epoch 10 \
      -train_batch_size 16 \
      -valid_batch_size 16 \
      -lr 2e-5 \
