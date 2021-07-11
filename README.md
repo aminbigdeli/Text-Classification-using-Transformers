@@ -60,7 +60,7 @@ For the experiment part, we propose a Query Gender classifier that is capable of
 ## Train
 In order to fine-tune each of the transformer models, you can execute the following bash file:
 ```shell
-sh train.sh
+bash train.sh
 ```
 Please note that before executing the bash file, you need to define a set of path files in it.
 
@@ -80,7 +80,7 @@ Please note that before executing the bash file, you need to define a set of pat
 ## Inference
 In order to inference the fine-tuned models, you can execute the following bash file:
 ```shell
-sh inference.sh
+bash inference.sh
 ```
 Please note that before executing the bash file, you need to define a set of path files in it.
 
@@ -106,6 +106,6 @@ Both train.py and inference.py scripts receive the datasets in .tsv format with 
 ## Cross Validation
 In order to compare the performance of different transformer models on your dataset, you can perform k-fold cross validation by executing the following bash file:
 ```shell
-sh cross_validation.sh
+bash cross_validation.sh
 ```
 By default, the dataset is the gender annotated dataset and the result path is [/data/cross_validation_path](https://github.com/aminbigdeli/Text-Classification-using-Transformers/tree/master/data/cross_validation_path) folder.
