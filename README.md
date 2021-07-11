@@ -108,4 +108,4 @@ In order to compare the performance of different transformer models on your data
 ```shell
 bash cross_validation.sh
 ```
-By default, the dataset is the [gender-annotated dataset](https://github.com/aminbigdeli/Text-Classification-using-Transformers/blob/master/data/gender_annotated_dataset.tsv) and the result path is [/data/cross_validation_path](https://github.com/aminbigdeli/Text-Classification-using-Transformers/tree/master/data/cross_validation_path) folder.
+By default, dataset is the [gender-annotated dataset](https://github.com/aminbigdeli/Text-Classification-using-Transformers/blob/master/data/gender_annotated_dataset.tsv) and the result path is [/data/cross_validation_path](https://github.com/aminbigdeli/Text-Classification-using-Transformers/tree/master/data/cross_validation_path) folder.
