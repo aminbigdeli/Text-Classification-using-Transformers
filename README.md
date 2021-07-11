@@ -67,15 +67,15 @@ Please note that before executing the bash file, you need to define a set of pat
 #### Option
 ```
 -model                     BERT, XLNet, RoBERTa, DistilBERT, etc.
--train                     Path to training dataset.
--dev                       Path to validation dataset if you want to validate the trained model, otherwise ignore it.
--res                       Path to result dir. If not defined, the model will be saved in the experiments dir.
--max_sequence_len          Max length of sequence tokens.
--epoch                     Number of epochs.
--train_batch_size          Batch size.
--valid_batch_size          Batch size.
--lr                        Learning rate.
--n_warmup_steps            Warmup steps.
+-train                     path to training dataset.
+-dev                       path to validation dataset if you want to validate the trained model, otherwise ignore it.
+-res                       path to result dir. If not defined, the model will be saved in the experiments dir.
+-max_sequence_len          max length of sequence tokens.
+-epoch                     number of epochs.
+-train_batch_size          batch size.
+-valid_batch_size          batch size.
+-lr                        learning rate.
+-n_warmup_steps            warmup steps.
 ```
 ## Inference
 In order to inference the fine-tuned models, you can execute the following bash file:
@@ -87,12 +87,12 @@ Please note that before executing the bash file, you need to define a set of pat
 ### Option
 ```
 -model                     BERT, XLNet, RoBERTa, DistilBERT, etc.
--test                      Path to test dataset.
--checkpoint                Path to checkpoint.
--res                       Path to result dir.
--num_labels                Number of classes.
--max_sequence_len          Max length of sequence tokens.
--test_batch_size           Batch size.
+-test                      path to test dataset.
+-checkpoint                path to checkpoint.
+-res                       path to result dir.
+-num_labels                number of classes.
+-max_sequence_len          max length of sequence tokens.
+-test_batch_size           batch size.
 ```
 
 ## Data Format
