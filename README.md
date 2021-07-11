@@ -66,7 +66,7 @@ In order to fine-tune each of the transformer models on your dataset, you can ex
 ```shell
 bash train.sh
 ```
-Please note that before executing the bash file, you need to define a set of path files in it.
+Please note that before executing the bash file, you need to define a set of files path in it.
 
 #### Option
 ```
@@ -86,7 +86,7 @@ In order to inference the fine-tuned models, you can execute the following bash 
 ```shell
 bash inference.sh
 ```
-Please note that before executing the bash file, you need to define a set of path files in it.
+Please note that before executing the bash file, you need to define a set of files path in it.
 
 ### Option
 ```
