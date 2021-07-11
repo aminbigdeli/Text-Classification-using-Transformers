@@ -1,8 +1,7 @@
 #bash
-
 # You need to specify these configurations
-dataset_path=/data/gender_annotated_dataset.tsv
-cross_validation_folder=/data/cross_validation_path
+dataset_path=./data/gender_annotated_dataset.tsv
+cross_validation_folder=./data/cross_validation_path
 k_fold=5
 # End here
 
@@ -14,10 +13,8 @@ python utils.py \
  -k_fold ${k_fold}
 # End here
 
-
 #K-Fold cross validation
-for ((idx=1; idx<=$k_fold; idx++))
-do
+for ((idx=1; idx<=$k_fold; idx++)); do
     echo "--------------------------- Fold ${idx} ---------------------------"
 
     train_path=${cross_validation_folder}/fold-${idx}/train.tsv
@@ -30,7 +27,7 @@ do
      -dev ${dev_path} \
      -res ${result_path} \
      -max_sequence_len 64\
-     -epoch 10 \
+     -epoch 1 \
      -train_batch_size 16 \
      -valid_batch_size 16 \
      -lr 2e-5 \
@@ -39,4 +36,3 @@ do
 done
 
 #Done
-
