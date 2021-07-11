@@ -58,7 +58,7 @@ For the experiment part, we propose a Query Gender classifier that is capable of
 </table>
 
 ## Train
-In order to fine-tune each of the transformer models, you can execute the following bash file:
+In order to fine-tune each of the transformer models on your dataset, you can execute the following bash file:
 ```shell
 bash train.sh
 ```
