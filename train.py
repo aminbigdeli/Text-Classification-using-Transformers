@@ -207,10 +207,10 @@ def main():
             model,
             valid_data_loader
             )
-    df_dev['prediction'] = y_pred
+    df_dev['predicted_label'] = y_pred
     for i in range(len(encoded_classes)):
-      df_dev[encoded_classes[i]] = y_pred_probs[:, i]
-    df_dev.to_csv(res_path + "/predictions.tsv", sep = "\t", index = False)
+      df_dev["weight_class_"+str(i)] = y_pred_probs[:, i]
+    df_dev.to_csv(res_path + "/classification_result_dev.tsv", sep = "\t", index = False)
     logger.write('-' * 10)
     logger.write("\n")
     accuracy = accuracy_score(y_test, y_pred)
