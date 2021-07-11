@@ -66,7 +66,7 @@ Please note that before executing the bash file, you need to define a set of pat
 
 #### Option
 ```
--model                     BERT, XLNet, RoBERTa, DistilBERT, or etc.
+-model                     BERT, XLNet, RoBERTa, DistilBERT, etc.
 -train                     Path to training dataset.
 -dev                       Path to validation dataset if you want to validate the trained model, otherwise ignore it.
 -res                       Path to result dir. If not defined, the model will be saved in the experiments dir.
@@ -86,7 +86,7 @@ Please note that before executing the bash file, you need to define a set of pat
 
 ### Option
 ```
--model                     BERT, XLNet, RoBERTa, DistilBERT, or etc.
+-model                     BERT, XLNet, RoBERTa, DistilBERT, etc.
 -test                      Path to test dataset.
 -checkpoint                Path to checkpoint.
 -res                       Path to result dir.
