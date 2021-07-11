@@ -17,10 +17,10 @@ def split_dataset(ds_path, cross_validation_path, k_fold):
         X_dev = pd.DataFrame(X_dev)
         if not os.path.exists(cross_validation_path + "/fold-" + str(fold_idx)):
           os.makedirs(cross_validation_path + "/fold-" + str(fold_idx))
-          train_path = cross_validation_path + "/fold-" + str(fold_idx) + "/train.tsv"
-          dev_path = cross_validation_path + "/fold-" + str(fold_idx) + "/test.tsv"
-          X_train.to_csv(train_path, sep = "\t", header = None, index=False)
-          X_dev.to_csv(dev_path, sep = "\t", header = None, index=False)
+        train_path = cross_validation_path + "/fold-" + str(fold_idx) + "/train.tsv"
+        dev_path = cross_validation_path + "/fold-" + str(fold_idx) + "/test.tsv"
+        X_train.to_csv(train_path, sep = "\t", header = None, index=False)
+        X_dev.to_csv(dev_path, sep = "\t", header = None, index=False)
 
 
 def main():
