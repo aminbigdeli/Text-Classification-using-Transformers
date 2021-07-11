@@ -103,9 +103,9 @@ Please note that before executing the bash file, you need to define a set of pat
 Both train.py and inference.py scripts receive the datasets in .tsv format with the following format:
 |file|format (.tsv)|
 |:---|:-----|
-|train| "id" \t "sequence" \t "label"|
-|dev  | "id" \t "sequence" \t "label"|
-|test | "id" \t "sequence"|
+|train| id \t sequence \t label|
+|dev  | id \t sequence \t label|
+|test | id \t sequence|
 
 ## Cross Validation
 In order to compare the performance of different transformer models on your dataset, you can perform k-fold cross validation by executing the following bash file:
