@@ -2,61 +2,64 @@
 This repository contains the code and resources for text classification task using state-of-the-art Transformer models such as BERT and XLNet. You can use this github repository to fine-tune different tranformer models on your dataset for the task of sequence classification.
 ## Experiment
 For the experiment part, we propose a Query Gender classifier that is capable of identifying the gender of each sentence. As the first step and in order to be able to label sequences based on their gender at scale, we employed the [gender-annotated dataset](https://github.com/aminbigdeli/Text-Classification-using-Transformers/blob/master/data/gender_annotated_dataset.tsv) released by [Navid Rekabsaz](https://github.com/navid-rekabsaz/GenderBias_IR) to train relevant classifiers. This dataset consists of 742 female, 1,202 male and 1,765 neutral queries. We trained various types of  classifiers on this dataset and in order to evaluate the performance of the classifiers, we adopt a 5-fold cross-validation strategy.
-<table>
+<table class="tg">
 <thead>
   <tr>
-    <th style="text-align: right;" class="tg-0lax">Transformer Model</th>
-    <th class="tg-0lax">Classifier</th>
-    <th class="tg-0lax">Accuracy</th>
-    <th class="tg-baqh" colspan="3">F1-Score</th>
+    <th class="tg-fymr" rowspan="2">Classifier</th>
+    <th class="tg-fymr" rowspan="2">Accuracy</th>
+    <th class="tg-fymr" colspan="3">F1-Score</th>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><b>Female</td>
+    <td class="tg-fymr"><b>Male</td>
+    <td class="tg-fymr"><b>Neutral</td>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">BERT (base uncased)</td>
-    <td class="tg-l2oz"><b>0.856</td>
-    <td class="tg-l2oz"><b>0.816</td>
-    <td class="tg-l2oz"><b>0.872</td>
-    <td class="tg-l2oz"><b>0.862</td>
+    <td class="tg-xnov">BERT (base uncased)</td>
+    <td class="tg-oyjm"><b>0.856</td>
+    <td class="tg-oyjm"><b>0.816</td>
+    <td class="tg-oyjm"><b>0.872</td>
+    <td class="tg-oyjm"><b>0.862</td>
   </tr>
   <tr>
-    <td class="tg-0lax">DistilBERT (base uncased)</td>
-    <td class="tg-lqy6">0.847</td>
-    <td class="tg-lqy6">0.815</td>
-    <td class="tg-lqy6">0.861</td>
-    <td class="tg-lqy6">0.853</td>
+    <td class="tg-xnov">DistilBERT (base uncased)</td>
+    <td class="tg-xnov">0.847</td>
+    <td class="tg-xnov">0.815</td>
+    <td class="tg-xnov">0.861</td>
+    <td class="tg-xnov">0.853</td>
   </tr>
   <tr>
-    <td class="tg-0lax">RoBERTa</td>
-    <td class="tg-lqy6">0.810</td>
-    <td class="tg-lqy6">0.733</td>
-    <td class="tg-lqy6">0.820</td>
-    <td class="tg-lqy6">0.836</td>
+    <td class="tg-xnov">RoBERTa</td>
+    <td class="tg-xnov">0.810</td>
+    <td class="tg-xnov">0.733</td>
+    <td class="tg-xnov">0.820</td>
+    <td class="tg-xnov">0.836</td>
   </tr>
   <tr>
-    <td class="tg-0lax">DistilBERT (base cased)</td>
-    <td class="tg-lqy6">0.800</td>
-    <td class="tg-lqy6">0.730</td>
-    <td class="tg-lqy6">0.823</td>
-    <td class="tg-lqy6">0.833</td>
+    <td class="tg-xnov">DistilBERT (base cased)</td>
+    <td class="tg-xnov">0.800</td>
+    <td class="tg-xnov">0.730</td>
+    <td class="tg-xnov">0.823</td>
+    <td class="tg-xnov">0.833</td>
   </tr>
   <tr>
-    <td class="tg-0lax">BERT (base cased)</td>
-    <td class="tg-lqy6">0.797</td>
-    <td class="tg-lqy6">0.710</td>
-    <td class="tg-lqy6">0.805</td>
-    <td class="tg-lqy6">0.827</td>
+    <td class="tg-xnov">BERT (base cased)</td>
+    <td class="tg-xnov">0.797</td>
+    <td class="tg-xnov">0.710</td>
+    <td class="tg-xnov">0.805</td>
+    <td class="tg-xnov">0.827</td>
   </tr>
   <tr>
-    <td class="tg-0lax">XLNet (base cased)</td>
-    <td class="tg-lqy6">0.795</td>
-    <td class="tg-lqy6">0.710</td>
-    <td class="tg-lqy6">0.805</td>
-    <td class="tg-lqy6">0.826</td>
+    <td class="tg-xnov">XLNet (base cased)</td>
+    <td class="tg-xnov">0.795</td>
+    <td class="tg-xnov">0.710</td>
+    <td class="tg-xnov">0.805</td>
+    <td class="tg-xnov">0.826</td>
   </tr>
 </tbody>
 </table>
-
 ## Train
 In order to fine-tune each of the transformer models on your dataset, you can execute the following bash file:
 ```shell
