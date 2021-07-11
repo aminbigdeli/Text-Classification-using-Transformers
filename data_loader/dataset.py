@@ -16,12 +16,12 @@ class Dataset(Dataset):
             self.classes = None
             self.encoded_classes = None 
         else:
-            df = pd.read_csv(dataset, sep = "\t", names = ["id", "sequence", "class"]) 
+            df = pd.read_csv(dataset, sep = "\t", names = ["id", "sequence", "label"]) 
             labelEncoder = LabelEncoder()
-            df['class'] = labelEncoder.fit_transform(df['class'])
+            df['label'] = labelEncoder.fit_transform(df['label'])
             self.classes = labelEncoder.classes_
-            self.encoded_classes = pd.unique(df['class'])
-            self.targets = df['class'].to_numpy()
+            self.encoded_classes = pd.unique(df['label'])
+            self.targets = df['label'].to_numpy()
 
         self.sequences = df['sequence'].to_numpy()
         self.df = df
