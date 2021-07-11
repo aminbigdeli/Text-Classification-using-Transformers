@@ -1,8 +1,8 @@
 #bash
 
 # You need to specify these configurations
-dataset_path=/data/dataset.tsv
-cross_validation_folder=/data/cross_validation_path/
+dataset_path=/data/gender_annotated_dataset.tsv
+cross_validation_folder=/data/cross_validation_path
 k_fold=5
 # End here
 
