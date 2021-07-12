@@ -56,7 +56,7 @@ def train(model, data_loader, optimizer, device, scheduler, n_examples):
     optimizer.zero_grad()
   return correct_predictions.double() / n_examples, np.mean(losses)
 
-#Evaluation function - used when adopting K-fold
+#Evaluation function 
 def eval(model, data_loader, device, n_examples):
   print("Validating the Model")
   model = model.eval()
@@ -78,7 +78,7 @@ def eval(model, data_loader, device, n_examples):
       losses.append(loss.item())
   return correct_predictions.double() / n_examples, np.mean(losses)
 
-#Prediction function - used to calculate the accuracy of the model when true labels are available
+#Prediction function
 def get_predictions(model, data_loader):
   print("Testing the Best-Perfomred Model")
   model = model.eval()
