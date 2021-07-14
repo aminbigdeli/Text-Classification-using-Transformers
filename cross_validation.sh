@@ -7,7 +7,7 @@ k_fold=5
 
 #Spliting the dataset into defined K-folds 
 #Comment this section if you have your dataset splitted into K-Folds
-python utils.py \
+python split.py \
  -dataset_path ${dataset_path} \
  -cross_validation_path ${cross_validation_folder} \
  -k_fold ${k_fold}
