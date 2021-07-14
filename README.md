@@ -65,8 +65,10 @@ For the experiment part, we propose a Query Gender classifier that is capable of
 All of the models on the [Huggingface](https://huggingface.co/transformers) that support `AutoModelForSequenceClassification` are supported by this repository and can be used by setting the model parameter of the train.py with the appropriate name of the model. Some of them are listed below and the others can be found on Huggingface website.
 ```
 Model = {
-    "BERT uncased": "bert-base-uncased",
-    "BERT cased": "bert-base-cased",
+    "BERT base uncased": "bert-base-uncased",
+    "BERT base cased": "bert-base-cased",
+    "BERT large uncased": "bert-large-uncased",
+    "BERT large cased": "bert-large-cased",
     "XLNet": "xlnet-base-cased",
     "RoBERTa": "roberta-base",
     "DistilBERT": "distilbert-base-uncased"
