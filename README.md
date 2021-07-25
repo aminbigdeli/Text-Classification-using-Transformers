@@ -61,6 +61,8 @@ For the experiment part, we propose a Query Gender classifier that is capable of
 </tbody>
 </table>
 
+You can find the fine-tuned BERT model on the gender-annotated dataset [here](https://drive.google.com/file/d/1k-XL9xpdmzlXmVMs0MRrQv6PChQW8Vfn/view?usp=sharing) and use inference.py for predicting the gender of sequences.
+
 ## Models
 All of the models on the [Huggingface](https://huggingface.co/transformers) that support `AutoModelForSequenceClassification` are supported by this repository and can be used by setting the model parameter of the train.py with the appropriate name of the model. Some of them are listed below and the others can be found on Huggingface website.
 ```
