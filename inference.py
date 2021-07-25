@@ -68,7 +68,7 @@ def main():
 
   print("Classifying ...")
   _, y_pred, y_pred_probs = get_predictions(model, test_data_loader)
-  pred_df = pd.DataFrame(df_test.values.tolist(), columns = ["id","sequence", "predicted_label"])
+  pred_df = pd.DataFrame(df_test.values.tolist(), columns = ["id","sequence"])
   for i in range(args.num_labels):
     pred_df["weight_class_"+str(i)] = y_pred_probs[:, i]
   pred_df['predicted_label'] = y_pred
