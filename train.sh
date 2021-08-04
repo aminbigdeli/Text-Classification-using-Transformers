@@ -4,7 +4,7 @@ python train.py \
      -model bert-base-uncased \
      -train ${train_path} \
      -dev ${dev_path} \
-     -res ${result_path}
+     -res ${result_path} \
      -max_sequence_len 64\
      -epoch 10 \
      -train_batch_size 16\
