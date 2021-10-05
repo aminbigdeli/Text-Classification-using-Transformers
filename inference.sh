@@ -7,4 +7,4 @@ python inference.py \
      -res ${result_path} \
      -num_labels 3 \
      -max_sequence_len 64 \
-     -test_batch_size 16 \
+     -test_batch_size 16 
