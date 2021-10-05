@@ -31,7 +31,7 @@ for ((idx=1; idx<=$k_fold; idx++)); do
      -train_batch_size 16 \
      -valid_batch_size 16 \
      -lr 2e-5 \
-     -n_warmup_steps 0 \
+     -n_warmup_steps 0 
      
 done
 
