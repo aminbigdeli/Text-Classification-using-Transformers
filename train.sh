@@ -10,4 +10,4 @@ python train.py \
      -train_batch_size 16\
      -valid_batch_size 16 \
      -lr 2e-5 \
-     -n_warmup_steps 0 \
+     -n_warmup_steps 0 
